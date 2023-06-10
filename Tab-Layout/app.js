@@ -1,0 +1,61 @@
+$(document).ready(function(){
+    $('#tab1').click(function(){
+        $('#content1').css(
+            'display','block'
+        )
+        $('#content2').css(
+            'display','none'
+        )
+        $('#content3').css(
+            'display','none'
+        )
+        $('#content4').css(
+            'display','none'
+        )
+        
+    })
+
+    $('#tab2').click(function(){
+        $('#content2').css(
+            'display','block'
+        )
+        $('#content1').css(
+            'display','none'
+        )
+        $('#content3').css(
+            'display','none'
+        )
+        $('#content4').css(
+            'display','none'
+        )
+        
+    })
+    $('#tab3').click(function(){
+        $('#content3').css(
+            'display','block'
+        )
+        $('#content2').css(
+            'display','none'
+        )
+        $('#content4').css(
+            'display','none'
+        )
+        $('#content1').css(
+            'display','none'
+        )
+    })
+    $('#tab4').click(function(){
+        $('#content4').css(
+            'display','block'
+        )
+        $('#content1').css(
+            'display','none'
+        )
+        $('#content2').css(
+            'display','none'
+        )
+        $('#content3').css(
+            'display','none'
+        )
+    })
+})
