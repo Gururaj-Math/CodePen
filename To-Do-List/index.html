@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="box" ng-app="myapp" ng-controller="mycontroller">
+        <h1>To-Do List</h1>
+        <div class="addwork">
+          <input ng-model="newitem" placeholder="Add Work" class="addText">
+          <button ng-click="pushitem()">Add</button>
+        </div>
+        <ul>
+          <li ng-repeat="i in items">{{i}} <span ng-click="deleteitem($index)"><i class='bx bx-x'></i></span></li>
+        </ul>
+      </div>
+</body>
+</html>
