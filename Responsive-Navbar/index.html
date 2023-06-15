@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">GURURAJ.</div>
+        <ul class="navigation">
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#shop">SHOP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#review">REVIEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars on" id="on"></i>
+        </div>
+        <div class="alert">
+            <ul class="navigation1">
+                <i class='bx bxs-x-circle close'></i>
+                <li><a href="#banner" class="out">HOME</a></li>
+                <li><a href="#shop" class="out">SHOP</a></li>
+                <li><a href="#about" class="out">ABOUT</a></li>
+                <li><a href="#review" class="out">REVIEWS</a></li>
+                <li><a href="#contact" class="out">CONTACT</a></li>
+            </ul>
+            </i>
+        </div>
+    </header>
+    <script>
+
+        $(document).ready(function () {
+            $(".on").click(function () {
+                $('.alert').css({
+                    'transform': 'translateX(0)',
+                });
+            });
+
+            $(".close").click(function () {
+                $('.alert').css({
+                    'transform': 'translateX(150%)',
+                });
+            });
+
+            $(".out").click(function () {
+                $('.alert').css({
+                    'transform': 'translateX(150%)',
+                });
+            })
+        })
+    </script>
+</body>
+
+</html>
